@@ -4,7 +4,7 @@ import random
 # generated is greater than or equal to the word, it returns
 #  the same word. To avoid that, I used Caesar cipher to encrypt
 #  words less than 3.
-# 'row' can always be changed to key to decrypt
+# 'row' can always be changed to key and passed in as a parameter to decrypt
 def rail_fence(word):
     """
     :param word: -> str
@@ -17,15 +17,17 @@ def rail_fence(word):
     word = "".join(word.split())
     row = random.randint(3, 7)
     cypher = [""] * row
-
-    if len(word) < 3:
+    
+    if not word:
+        return ""
+    elif len(word) < 3:
         #encrypt using caesar cippher
         for elem in word:
             cypher[0] += chr(ord(elem) + row)
         return cypher[0]
 
+    # Rail fence backbone
     index = 0
-
     for elem in word:
         if index == 0:
             cypher[index] += elem
