@@ -1,4 +1,4 @@
-# Rail_Fence-Cipher
+# Caeser Cipher + Rail Fence Cipher
 My Terragon Snack for Dessert!
 
 This code uses Caesar Cipher and Rail Fence Cipher, a variation of Transposition cipher, to encrypt some given texts.
