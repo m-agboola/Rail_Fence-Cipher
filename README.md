@@ -1,6 +1,6 @@
-# Rail Fence Cipher (with Caeser Cipher)
+# Rail Fence Cipher (My Terragon Snack for Dessert)!
 
-(My Terragon Snack for Dessert)!
+An implementation of a type of Transposition Cipher encryption algorithms
 
 ###### This code was completed during 90 minutes of Terragon's snap recruitment test.
 It uses Caesar Cipher and Rail Fence Cipher, a variation of Transposition cipher, to encrypt some given texts.
